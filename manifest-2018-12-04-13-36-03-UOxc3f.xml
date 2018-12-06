@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<container>
+  <testcase id="81973" type="Source Code" status="Accepted" submissionDate="2013-05-20" language="C++" author="NSA/Center for Assured Software" numberOfFiles="5" testsuiteid="86 108">
+    <description><![CDATA[CWE: 134 Uncontrolled Format String<br/> BadSource: listen_socket Read data using a listen socket (server side)<br/> GoodSource: Copy a fixed string into data<br/> Sinks: w32_vsnprintf<br/> GoodSink: _vsnwprintf with a format string<br/> BadSink : _vsnwprintf without a format string<br/> Flow Variant: 74 Data flow: data passed in a map from one function to another in different source files]]></description>
+    <file path="000/081/973/CWE134_Uncontrolled_Format_String__wchar_t_listen_socket_w32_vsnprintf_74a.cpp" language="C++" size="8414" checksum="ac1165f734f3a78f39330f769b0b3d1590d3ce41"/>
+    <file path="shared/108/std_testcase_io.h" language="C" size="1457" checksum="56de16829d5ac9d8086670ee5098217aa6694d26"/>
+    <file path="shared/108/io.c" language="C" size="5429" checksum="bcf531cb1922c03347031698c1c72eddadbf0d88"/>
+    <file path="shared/108/std_testcase.h" language="C" size="4004" checksum="d1801c64bc49d5d05fb3d55f7cc7e3a925c47e2f"/>
+    <file path="000/081/973/CWE134_Uncontrolled_Format_String__wchar_t_listen_socket_w32_vsnprintf_74b.cpp" language="C++" size="2568" checksum="822c479729452fa56264eeaa439c446d15270f16">
+      <mixed line="39" name="CWE-134: Uncontrolled Format String"/>
+    </file>
+  </testcase>
+</container>
